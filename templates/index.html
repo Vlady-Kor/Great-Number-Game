@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Number Game!</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <div class="number">
+            <h1>Welcome to the Great Number Game!</h1>
+            <br>
+            <p>I am thinking of a number between 1 and 100</p>
+            <h2>You have {{ x }} guess left!</h2>
+            <br>
+            <p>{{num}}</p>
+            <form action="/calculate" method="post">
+                <input type="text" name="guess">
+                <input type="submit">
+            </form>
+            <p class="result">{{calc}}</p>
+        </div>
+    </div>
+</body>
+</html>

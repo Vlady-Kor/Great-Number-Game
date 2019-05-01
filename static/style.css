@@ -1,0 +1,14 @@
+.container{
+    text-align: center
+}
+.number {
+    text-align: center;
+}
+.result{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+}
